@@ -3,13 +3,6 @@ import imagen from "../assets/user.png";
 import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 function About() {
-  const [name, setName] = React.useState("elizabethmv11.im@gmail.com");
-  // const [Descripcion, setDescripcion] = React.useState(
-  //   "elizabethmv11.im@gmail.com"
-  // );
-  // const handleChange = (event) => {
-  //   setName(event.target.value);
-  // };
   return (
     <div
       style={{
