@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import imagen from "../assets/user.png";
-import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
+import { Avatar, Box, Grid, Link, Paper, Typography } from "@mui/material";
 import React from "react";
 function About() {
   return (
@@ -46,20 +46,28 @@ function About() {
                   <b>En este bootcamp apredí:</b>
                 </Typography>
                 <Typography>
-                  A buscar información de manera más rapida
+                  1. A buscar información de manera más rapida
                 </Typography>
                 <Typography>
-                  A separar mis tiempos para lograr cada tarea
+                  2. A separar mis tiempos para lograr cada tarea
                 </Typography>
                 <Typography>
-                  Que tecnologías necesito para superarme en este mundo de la
+                  3. Que tecnologías necesito para superarme en este mundo de la
                   programación.
                 </Typography>
                 <Typography>
                   <b>Correo:</b> elizabethmv11.im@gmail.com
                 </Typography>
+
                 <Typography>
-                  <b>Link Github:</b> https://github.com/IrisMonteza
+                  <b>Link Github:</b>
+                  <Link
+                    target="_blank"
+                    href="https://github.com/IrisMonteza"
+                    underline="none"
+                  >
+                    https://github.com/IrisMonteza
+                  </Link>
                 </Typography>
               </Grid>
             </Grid>
