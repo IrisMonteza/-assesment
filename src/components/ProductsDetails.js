@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { React, useEffect, useState } from 'react';
+import axios from 'axios';
 import {
   Button,
   Card,
@@ -8,9 +8,9 @@ import {
   Container,
   Grid,
   LinearProgress,
-  Typography,
-} from "@mui/material";
-import { Link } from "react-router-dom";
+  Typography
+} from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function ProductsDetails() {
   const [fake, setfake] = useState([]);
@@ -27,7 +27,7 @@ function ProductsDetails() {
   }, []);
 
   return isLoading ? (
-    <Container sx={{ width: "40%", paddingTop: 55 }}>
+    <Container sx={{ width: '40%', paddingTop: 55 }}>
       <LinearProgress />
     </Container>
   ) : (
@@ -45,7 +45,7 @@ function ProductsDetails() {
             height="220"
             image={fake.image}
             alt={fake.title}
-            sx={{ objectFit: "contain", paddingBottom: 1 }}
+            sx={{ objectFit: 'contain', paddingBottom: 1 }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

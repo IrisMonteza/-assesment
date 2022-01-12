@@ -1,20 +1,28 @@
-import NavBar from "../components/NavBar";
-import imagen from "../assets/user.png";
-import { Avatar, Box, Grid, Link, Paper, Typography } from "@mui/material";
-import React from "react";
+import React from 'react';
+import { Avatar, Box, Grid, Link, Paper, Typography } from '@mui/material';
+import NavBar from '../components/NavBar';
+import imagen from '../assets/user.png';
+
 function About() {
   return (
     <div
       style={{
-        width: "100%",
-        height: "100vh" /*, background: "black"*/,
-        margin: "auto",
+        width: '100%',
+        height: '100vh' /* , background: "black" */,
+        margin: 'auto'
       }}
     >
-      <Box sx={{ display: "flex", p: 1, m: 1 }}>
+      <Box sx={{ display: 'flex', p: 1, m: 1 }}>
         <NavBar />
       </Box>
-      <Paper sx={{ p: 2, margin: "auto", maxWidth: 500, flexGrow: 1 }}>
+      <Paper
+        sx={{
+          p: 2,
+          margin: 'auto',
+          maxWidth: 500,
+          flexGrow: 1
+        }}
+      >
         <Grid container spacing={2}>
           <Grid item>
             <Avatar
@@ -25,7 +33,7 @@ function About() {
                 height: 128,
                 // width: "8rem",
                 // height: "8rem",
-                mb: "1em",
+                mb: '1em'
               }}
             />
           </Grid>

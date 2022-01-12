@@ -1,7 +1,6 @@
-import * as React from "react";
-import imagen from "../assets/user.png";
-import MenuIcon from "@mui/icons-material/Menu";
-import { /*BrowserRouter as Router, Route,*/ Link } from "react-router-dom";
+import * as React from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import { /* BrowserRouter as Router, Route, */ Link } from 'react-router-dom';
 import {
   AppBar,
   Avatar,
@@ -12,10 +11,11 @@ import {
   Menu,
   MenuItem,
   Toolbar,
-  Typography,
-} from "@mui/material";
+  Typography
+} from '@mui/material';
+import imagen from '../assets/user.png';
 
-const NavBar = () => {
+function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -34,12 +34,12 @@ const NavBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
             ASSESMENT
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -54,18 +54,18 @@ const NavBar = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: 'bottom',
+                horizontal: 'left'
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
+                vertical: 'top',
+                horizontal: 'left'
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: 'block', md: 'none' }
               }}
             >
               <MenuItem component={Link} to="/" onClick={handleCloseNavMenu}>
@@ -84,16 +84,16 @@ const NavBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
             ASSESMENT
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Button
               component={Link}
               to="/"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, color: 'white', display: 'block' }}
             >
               Home
             </Button>
@@ -102,7 +102,7 @@ const NavBar = () => {
               component={Link}
               to="/About"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, color: 'white', display: 'block' }}
             >
               About
             </Button>
@@ -115,5 +115,5 @@ const NavBar = () => {
       </Container>
     </AppBar>
   );
-};
+}
 export default NavBar;
