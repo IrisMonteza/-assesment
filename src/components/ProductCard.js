@@ -1,6 +1,6 @@
 import './ProductCard.css';
 import { React, useState, useEffect } from 'react';
-import { /* BrowserRouter as Router, Route, */ Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Container,
@@ -12,10 +12,8 @@ import {
 import axios from 'axios';
 
 function ProductCard() {
-  // https://fakestoreapi.com/products?limit=5
   const [fake, setfake] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  // console.log(fake);
   useEffect(() => {
     const fakestore = async () => {
       const response = await axios.get('https://fakestoreapi.com/products');

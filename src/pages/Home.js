@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard';
 
 function Home() {
   return (
-    <div style={{ width: '100%', height: '100vh' /* , background: 'black' */ }}>
+    <div style={{ width: '100%', height: '100vh' }}>
       <Box sx={{ display: 'flex', p: 1, m: 1 }}>
         <NavBar />
       </Box>
