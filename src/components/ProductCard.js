@@ -1,8 +1,7 @@
-import './ProductCard.css';
+import '../styles/style.css';
 import { React, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import {
-  Button,
+  CardActions,
   Container,
   ImageList,
   ImageListItem,
@@ -10,8 +9,9 @@ import {
   LinearProgress
 } from '@mui/material';
 import axios from 'axios';
+import Timer from './Timer';
 
-function ProductCard() {
+const ProductCard = () => {
   const [fake, setfake] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -69,13 +69,13 @@ function ProductCard() {
             title={values.title}
             position="below"
           />
-          <Button component={Link} to={`${values.id}`} variant="contained">
-            GO TO DETAILS
-          </Button>
+          <CardActions>
+            <Timer id={`${values.id}`} />
+          </CardActions>
         </ImageListItem>
       ))}
     </ImageList>
   );
-}
+};
 
 export default ProductCard;

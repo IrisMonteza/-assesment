@@ -13,9 +13,9 @@ import {
   Toolbar,
   Typography
 } from '@mui/material';
-import imagen from '../assets/user.png';
+import imagen from '../assets/user.jpg';
 
-function NavBar() {
+const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -27,7 +27,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -115,5 +115,5 @@ function NavBar() {
       </Container>
     </AppBar>
   );
-}
+};
 export default NavBar;

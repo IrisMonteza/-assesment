@@ -1,0 +1,10 @@
+.MuiImageListItemBar-title {
+  white-space: normal !important;
+}
+.about {
+  width: 100%;
+  margin: auto;
+}
+.home .product_detail {
+  width: 100%;
+}

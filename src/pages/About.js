@@ -1,25 +1,20 @@
 import React from 'react';
 import { Avatar, Box, Grid, Link, Paper, Typography } from '@mui/material';
 import NavBar from '../components/NavBar';
-import imagen from '../assets/user.png';
+import imagen from '../assets/user.jpg';
+import '../styles/style.css';
 
-function About() {
+const About = () => {
   return (
-    <div
-      style={{
-        width: '100%',
-        height: '100vh' /* , background: "black" */,
-        margin: 'auto'
-      }}
-    >
-      <Box sx={{ display: 'flex', p: 1, m: 1 }}>
+    <div className="about">
+      <Box sx={{ display: 'flex', p: 1, mt: 10, ml: 1, mr: 1 }}>
         <NavBar />
       </Box>
       <Paper
         sx={{
           p: 2,
           margin: 'auto',
-          maxWidth: 500,
+          maxWidth: 600,
           flexGrow: 1
         }}
       >
@@ -29,11 +24,9 @@ function About() {
               alt="Remy Sharp"
               src={`${imagen}`}
               sx={{
-                width: 128,
-                height: 128,
-                // width: "8rem",
-                // height: "8rem",
-                mb: '1em'
+                width: 200,
+                height: 200,
+                mt: '1em'
               }}
             />
           </Grid>
@@ -84,6 +77,6 @@ function About() {
       </Paper>
     </div>
   );
-}
+};
 
 export default About;

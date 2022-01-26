@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-function ProductsDetails() {
+const ProductsDetails = () => {
   const [fake, setfake] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -76,6 +76,6 @@ function ProductsDetails() {
       </Button>
     </Grid>
   );
-}
+};
 
 export default ProductsDetails;

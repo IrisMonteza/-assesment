@@ -4,8 +4,8 @@
     "es2021": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
     "prettier"
@@ -21,6 +21,7 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", "jsx"] }],
     "linebreak-style": 0,
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/prop-types": 0
   }
 }
